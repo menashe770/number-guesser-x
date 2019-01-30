@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  text-align: center;
+  background-color: #404041;
+}
+
+.card2 span,
+.guess-value, 
+button,
+h1 span,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1,
+.guess-value {
+  color: #dd1972;
+}
+
+h2,
+button {
+  color: #fff;
+}
+
+button {
+  background-color: #6e6e6e;
+}
+
+button:hover {
+  background-color: #dd1972;
+}
+
+.left-side {
+  background-color: #f7f7f7;
+}
+
+/*.right-side {
+  background-color: #404041;
+}*/

@@ -2,6 +2,7 @@
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  box-sizing: border-box;
 }
 
 header {
@@ -38,8 +39,45 @@ button:hover {
 
 .left-side {
   background-color: #f7f7f7;
+  padding: 10px;
+  width: 50%;
 }
 
+.card1, 
+.card2,
+.card3 {
+  background-color: #fff;
+  padding: 15px;
+  margin: 20px;
+}
+
+form {
+  display: inline-block;
+}
+
+.set-min-range, 
+.set-max-range {
+  display: inline-block;
+
+}
+.name1, 
+.name2 {
+  display: inline-block;
+}
+
+.challenger1-score {
+  display: inline-block;
+  width: 49%;
+}
+
+.challenger2-score {
+  display: inline-block;
+  width: 49%;
+  margin-left: 5px;
+}
+/*.card3 {
+  display: inline-block;
+}*/
 /*.right-side {
   background-color: #404041;
 }*/

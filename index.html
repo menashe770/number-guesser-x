@@ -14,14 +14,17 @@
     <section class="left-side">
       <article class="card1">
         <h3>Set Range</h3>
+        <div class="set-min-range">
         <form>
-          <label for="min-range-input">Min Range</label>
+          <label for="min-range-input">Min Range</label></br>
           <input type="Number" name="min-range-input" id="min-range-input">
         </form>
-        <form>
-          <label for="max-range-input">Max Range</label>
+        </div>
+        <div class="set-max-range"<form>
+          <label for="max-range-input">Max Range</label></br>
           <input type="Number" name="max-range-input" id="max-range-input">
         </form>
+        </div>
           <button class="update-button"> Update</button>
       </article>
       <article class="card2">
@@ -29,14 +32,18 @@
           The Current Range is <span class="min-guess">1</span> to <span class="max-guess">100</span>
         </p>
         <h3>Challenger 1</h3>
-        <form>
-          <label for="player1">Name</label>
-          <input type="text" name="player1" id="player1">
-        </form>
-        <form>
-          <label for="guess1">Guess</label>
-          <input type="Number" name="player2" id="guess1">
-        </form>
+        <div class="name1">
+          <form>
+            <label for="player1">Name</label></br>
+            <input type="text" name="player1" id="player1">
+          </form>
+        </div>
+        <div class="name2">
+          <form>
+            <label for="guess1">Guess</label></br>
+            <input type="Number" name="player2" id="guess1">
+          </form>
+        </div>
         <h3>Challenger 2</h3>
         <form>
           <label for="player2">Name</label>
@@ -46,20 +53,20 @@
           <label for="guess2">Guess</label>
           <input type="Number" name="guess2" id="guess2">
         </form>
+        <br>
         <button>Submit Guess</button>
         <button>Reset Game</button>
         <button>Clear Game</button>
       </article>
       <article class="card3">
-        <div>
         <h3>Latest Score</h3>
+        <div class="challenger1-score">
         <h4>Challenger 1 Name</h4>
           <p>current guess </p>
           <p class="guess-value">97</p>
           <p>that's too high</p>
         </div>
-        <div>
-        <h4>Challenger 2 Name</h4>
+        <div class="challenger2-score"><h4>Challenger 2 Name</h4>
           <p>current guess </p>
           <p class="guess-value">3</p>
           <p>that's too low</p>

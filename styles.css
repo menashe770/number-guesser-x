@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  border-style: groove;
+}
+
 header {
   text-align: center;
   background-color: #404041;
@@ -22,6 +26,7 @@ h4 {
 h1,
 .guess-value {
   color: #dd1972;
+  font-size: 60px;
 }
 
 h2,
@@ -29,8 +34,27 @@ button {
   color: #fff;
 }
 
+h1 {
+  padding-top: 10px;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+h3 {
+  color: #6e6e6e;
+}
+
+h4 {
+  color: #404041;
+}
+
 button {
   background-color: #6e6e6e;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }
 
 button:hover {
@@ -38,9 +62,34 @@ button:hover {
 }
 
 .left-side {
+  display: inline-block;
   background-color: #f7f7f7;
   padding: 10px;
   width: 50%;
+  border-right: 2px solid #D0D2D3;
+}
+
+.right-side {
+  background-color: #d4d0d0;
+  display: inline-block;
+  width: 50%;
+  height: 700px;
+  float: right;
+}
+
+.update-button {
+  width: 20%;
+  height: 35px;
+}
+
+.submit-guess-button,
+.reset-game-button,
+.clear-game-button {
+  width: 25%;
+  height: 35px;
+  padding: 5px;
+  margin-top: 25px;
+  margin-bottom: 7px;
 }
 
 .card1, 
@@ -49,35 +98,66 @@ button:hover {
   background-color: #fff;
   padding: 15px;
   margin: 20px;
+  box-sizing: border-box;
+  border: 2px solid #f7f7f7;
 }
 
 form {
   display: inline-block;
 }
 
+input {
+  border: 2px solid #f7f7f7;
+}
+
+#min-range-input,
+#max-range-input {
+  width: 200px;
+  height: 40px;
+}
+
 .set-min-range, 
 .set-max-range {
   display: inline-block;
-
+  margin: 5px;
+  width: 35%;
 }
 .name1, 
 .name2 {
   display: inline-block;
+  margin-right: 25px;
+}
+
+.player1,
+.player2 {
+  width: 35%;
+  margin-right: 0px;
+}
+#player1,
+#player2 {
+  width: 300px;
+  height: 40px;
+}
+
+#guess1,
+#guess2 {
+  width: 175px;
+  height: 40px;
 }
 
 .challenger1-score {
   display: inline-block;
   width: 49%;
+  text-align: center;
+  border-right: 2px solid #D0D2D3;
 }
 
 .challenger2-score {
   display: inline-block;
   width: 49%;
-  margin-left: 5px;
+  text-align: center;
 }
-/*.card3 {
-  display: inline-block;
-}*/
+
 /*.right-side {
   background-color: #404041;
 }*/

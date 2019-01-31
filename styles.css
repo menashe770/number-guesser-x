@@ -10,7 +10,6 @@ html {
 }
 
 header {
-  text-align: center;
   background-color: #404041;
 }
 
@@ -36,10 +35,14 @@ button {
 
 h1 {
   padding-top: 10px;
+  text-align: center;
 }
 
 h2 {
-  padding-bottom: 20px;
+  width: 22%;
+  padding-top: 20px;
+  text-align: center;
+  margin: auto;
 }
 
 h3 {
@@ -48,6 +51,24 @@ h3 {
 
 h4 {
   color: #404041;
+}
+
+.hr1 {
+  position: relative;
+  bottom: 15px;
+  display: inline-block;
+  width: 6.5%;
+  margin-bottom: 20px;
+  margin-left: 465px;
+}
+
+.hr2 {
+  position: relative;
+  bottom: 15px;
+  display: inline-block;
+  width: 6.5%;
+  margin-bottom: 20px;
+  margin-left: 307px;
 }
 
 button {
@@ -73,12 +94,12 @@ button:hover {
   background-color: #d4d0d0;
   display: inline-block;
   width: 50%;
-  height: 700px;
+  height: 750px;
   float: right;
 }
 
 .update-button {
-  width: 20%;
+  width: 25%;
   height: 35px;
 }
 
@@ -99,11 +120,11 @@ button:hover {
   padding: 15px;
   margin: 20px;
   box-sizing: border-box;
-  border: 2px solid #f7f7f7;
 }
 
 form {
   display: inline-block;
+  width: 35%;
 }
 
 input {
@@ -112,7 +133,7 @@ input {
 
 #min-range-input,
 #max-range-input {
-  width: 200px;
+  width: 75%;
   height: 40px;
 }
 

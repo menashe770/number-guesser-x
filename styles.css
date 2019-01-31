@@ -94,7 +94,7 @@ button:hover {
   background-color: #d4d0d0;
   display: inline-block;
   width: 50%;
-  height: 750px;
+  height: 730px;
   float: right;
 }
 
@@ -128,7 +128,9 @@ form {
 }
 
 input {
-  border: 2px solid #f7f7f7;
+  /*border: 2px solid #f7f7f7;*/
+  font-size: 15px;
+  padding: 5px;
 }
 
 #min-range-input,
@@ -143,6 +145,7 @@ input {
   margin: 5px;
   width: 35%;
 }
+
 .name1, 
 .name2 {
   display: inline-block;
@@ -178,7 +181,3 @@ input {
   width: 49%;
   text-align: center;
 }
-
-/*.right-side {
-  background-color: #404041;
-}*/

@@ -128,12 +128,12 @@ form {
 }
 
 input {
-  border: 2px solid #f7f7f7;
+  /*border: 2px solid #f7f7f7;*/
 }
 
 #min-range-input,
 #max-range-input {
-  width: 75%;
+  width: 200px;
   height: 40px;
 }
 
@@ -141,7 +141,7 @@ input {
 .set-max-range {
   display: inline-block;
   margin: 5px;
-  width: 35%;
+  width: 200px;
 }
 .name1, 
 .name2 {
@@ -178,7 +178,3 @@ input {
   width: 49%;
   text-align: center;
 }
-
-/*.right-side {
-  background-color: #404041;
-}*/

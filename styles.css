@@ -58,11 +58,15 @@ h4 {
   color: #404041;
 }
 
+header div {
+  display: block;
+}
+
 .hr1 {
   position: relative;
   bottom: 15px;
   display: inline-block;
-  width: 6.5%;
+  width: 85px;
   margin-bottom: 20px;
   margin-left: 465px;
 }
@@ -71,7 +75,7 @@ h4 {
   position: relative;
   bottom: 15px;
   display: inline-block;
-  width: 6.5%;
+  width: 80px;
   margin-bottom: 20px;
   margin-left: 307px;
 }
@@ -104,7 +108,11 @@ button:hover {
 }
 
 .update-button {
+  width: 50%;
   height: 35px;
+  display: inline-block;
+  display: flex;
+  align-items: flex-end;
 }
 
 .submit-guess-button,
@@ -127,6 +135,9 @@ button:hover {
 
 form {
   display: inline-block;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   width: 35%;
 }
 
@@ -147,7 +158,7 @@ input {
 .set-max-range {
   display: inline-block;
   margin: 5px;
-  width: 200px;
+  width: 100%;
 }
 
 .name1, 

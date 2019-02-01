@@ -59,28 +59,6 @@ h4 {
   color: #727279;
 }
 
-
-/*ADJUST HR*/
-/*.hr1 {
-  position: relative;
-  bottom: 15px;
-  right: 20px;
-  display: inline-block;
-  width: 85px;
-  margin-bottom: 20px;
-  margin-left: 465px;
-}
-
-.hr2 {
-  position: relative;
-  bottom: 15px;
-  left: 150px;
-  display: inline-block;
-  width: 85px;
-  margin-bottom: 20px;
-  margin-left: 307px;
-}*/
-
 button {
   background-color: #6e6e6e;
   border-radius: 20px;
@@ -108,19 +86,51 @@ button:hover {
 }
 
 .right-side-top-card {
+  display: inline-block;
   display: flex;
   justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
-.righ-side-card {
+.p-right-bottom-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+hr {
+  border: 1px solid #D0D2D3;
+}
+
+.right-side-card {
   border: solid #eaeaea;
   padding: 15px;
   margin: 20px;
   margin-top: 25px;
+  background-color: #fff;
 }
 
 .p-vs {
   padding: 10px;
+}
+
+.h2-chall-r,
+.h2-winner {
+  color: #6e6e6e;
+  font-size: 35px;
+}
+
+.h2-chall-r {
+  font-weight: 700;
+}
+
+.r-num-guess {
+  font-weight: 700;
 }
 
 .update-button {

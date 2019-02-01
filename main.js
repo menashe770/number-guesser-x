@@ -4,7 +4,8 @@ var updateButton = document.querySelector('.update-button');
 var minNumber = document.querySelector('.min-value');
 var maxNumber = document.querySelector('.max-value');
 
-updateButton.addEventListener('click', function() {
+updateButton.addEventListener('click', function(e) {
+  e.preventDefault();
   minNumber.innerText = minRange.value;
   maxNumber.innerText = maxRange.value;
   randomNumber = random();

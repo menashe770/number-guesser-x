@@ -107,6 +107,22 @@ button:hover {
   float: right;
 }
 
+.right-side-top-card {
+  display: flex;
+  justify-content: center;
+}
+
+.righ-side-card {
+  border: solid #eaeaea;
+  padding: 15px;
+  margin: 20px;
+  margin-top: 25px;
+}
+
+.p-vs {
+  padding: 10px;
+}
+
 .update-button {
   width: 50%;
   height: 35px;

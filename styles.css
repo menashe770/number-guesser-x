@@ -127,10 +127,17 @@ hr {
 
 .h2-chall-r {
   font-weight: 700;
+  margin-top: 20px;
 }
 
 .r-num-guess {
   font-weight: 700;
+  color: #6e6e6e;
+}
+
+.right-side-timer {
+  font-weight: 700;
+  color: #6e6e6e;
 }
 
 .update-button {

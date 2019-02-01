@@ -5,12 +5,8 @@
   box-sizing: border-box;
 }
 
-html {
-  border-style: groove;
-}
-
 header {
-  background-color: #404041;
+  background-color: #404042;
 }
 
 .card2 span,
@@ -22,6 +18,10 @@ h4 {
   font-weight: 700;
 }
 
+.card2 span {
+  text-decoration: underline;
+}
+
 h1,
 h2,
 button {
@@ -31,7 +31,6 @@ button {
 h1,
 .guess-value {
   color: #dd1972;
-  font-size: 60px;
 }
 
 h2,
@@ -42,29 +41,30 @@ button {
 h1 {
   padding-top: 10px;
   text-align: center;
+  font-size: 60px;
 }
 
 h2 {
   padding-top: 20px;
   text-align: center;
-  margin: auto;
+  position: relative;
+  bottom: 20px;
 }
 
 h3 {
-  color: #6e6e6e;
+  color: #606060;
 }
 
 h4 {
-  color: #404041;
+  color: #727279;
 }
 
-header div {
-  display: block;
-}
 
-.hr1 {
+/*ADJUST HR*/
+/*.hr1 {
   position: relative;
   bottom: 15px;
+  right: 20px;
   display: inline-block;
   width: 85px;
   margin-bottom: 20px;
@@ -74,16 +74,16 @@ header div {
 .hr2 {
   position: relative;
   bottom: 15px;
+  left: 150px;
   display: inline-block;
-  width: 80px;
+  width: 85px;
   margin-bottom: 20px;
   margin-left: 307px;
-}
+}*/
 
 button {
   background-color: #6e6e6e;
   border-radius: 20px;
-  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
 }
 
@@ -93,14 +93,14 @@ button:hover {
 
 .left-side {
   display: inline-block;
-  background-color: #f7f7f7;
+  background-color: #F5F6F8;
   padding: 10px;
   width: 50%;
-  border-right: 2px solid #D0D2D3;
+  border-right: 2px solid #aaa;
 }
 
 .right-side {
-  background-color: #d4d0d0;
+  background-color: #D1D2D4;
   display: inline-block;
   width: 50%;
   height: 730px;
@@ -130,7 +130,7 @@ button:hover {
   background-color: #fff;
   padding: 15px;
   margin: 20px;
-  box-sizing: border-box;
+  border: solid #eaeaea;
 }
 
 form {
@@ -195,4 +195,8 @@ input {
   display: inline-block;
   width: 49%;
   text-align: center;
+}
+
+.guess-value {
+  font-size: 90px;
 }

@@ -159,7 +159,7 @@ hr {
   border: solid #eaeaea;
 }
 
-
+/*FIX FORM DISPLAY*/
 form {
   display: inline-block;
   display: flex;
@@ -169,10 +169,10 @@ form {
 }
 
 input {
-  /*border: 2px solid #f7f7f7;*/
-  font-size: 15px
+  border: solid #eaeaea;
   padding: 5px;
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 #min-range-input,

@@ -141,11 +141,9 @@ hr {
 }
 
 .update-button {
-  width: 50%;
+  width: 30%;
   height: 35px;
   display: inline-block;
-  display: flex;
-  align-items: flex-end;
 }
 
 .submit-guess-button,
@@ -169,10 +167,7 @@ hr {
 /*FIX FORM DISPLAY*/
 form {
   display: inline-block;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 35%;
+  width: 100%;
 }
 
 input {
@@ -184,7 +179,7 @@ input {
 
 #min-range-input,
 #max-range-input {
-  width: 200px;
+  width: 90%;
   height: 40px;
 }
 
@@ -192,7 +187,7 @@ input {
 .set-max-range {
   display: inline-block;
   margin: 5px;
-  width: 100%;
+  width: 30%;
 }
 
 .name1, 

@@ -149,10 +149,16 @@ hr {
 .submit-guess-button,
 .reset-game-button,
 .clear-game-button {
+  width: 30%;
   height: 35px;
   padding: 5px;
   margin-top: 25px;
   margin-bottom: 7px;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card1, 
@@ -164,7 +170,6 @@ hr {
   border: solid #eaeaea;
 }
 
-/*FIX FORM DISPLAY*/
 form {
   display: inline-block;
   width: 100%;
@@ -207,9 +212,16 @@ input {
   height: 40px;
 }
 
+.guess1,
+.guess2 {
+  width: 30%;
+  margin-right: 10px;
+  display: inline-block;
+  float: right;
+}
+
 #guess1,
 #guess2 {
-  width: 175px;
   height: 40px;
 }
 

@@ -16,3 +16,31 @@ function random() {
   var random = Math.floor(Math.random() * (parseInt(maxRange.value) - parseInt(minRange.value) + 1)) + parseInt(minRange.value);
   return random;
 };
+
+
+// $("guess1")onclick.(function activateField(val) {
+// alert("if this works i take a " + val);
+
+// };
+function activateField() {
+
+var guessOne = $('#guess1').val();
+var guessTwo = $('#guess2').val();
+
+if (guessOne != '' && guessTwo != '') {
+$('#clear-game-button').prop('disabled', false);
+
+}
+if (guessOne === '' && guessTwo === '') {
+	$('#clear-game-button').prop('disabled', true);
+}
+
+if (guessOne != '' && guessTwo != '') {
+$('#reset-game-button').prop('disabled', false);
+
+}
+if (guessOne === '' && guessTwo === '') {
+	$('#reset-game-button').prop('disabled', true);
+}
+
+} 

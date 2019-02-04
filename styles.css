@@ -81,7 +81,7 @@ button:hover {
   background-color: #D1D2D4;
   display: inline-block;
   width: 50%;
-  height: 730px;
+  height: 790px;
   float: right;
 }
 
@@ -154,6 +154,11 @@ hr {
   padding: 5px;
   margin-top: 25px;
   margin-bottom: 7px;
+}
+
+.reset-game-button,
+.clear-game-button {
+  background-color: #D0D2D3;
 }
 
 .game-buttons {

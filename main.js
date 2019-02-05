@@ -14,6 +14,7 @@ var result1 = document.querySelector('.result1');
 var result2 = document.querySelector('.result2');
 var submitButton = document.querySelector('.submit-guess-button');
 var updateButton = document.querySelector('.update-button');
+var randomNumber = null;
 
 // updateButton.disabled = true;
 // submitButton.disabled = true;
@@ -26,6 +27,7 @@ updateButton.addEventListener('click', function(e) {
   randomNumber = random();
   console.log(randomNumber);
 })
+
 
 submitButton.addEventListener('click', function(e) {
   e.preventDefault();
@@ -41,7 +43,7 @@ resetButton.addEventListener('click', function(e) {
   player2Input.value = '';
   minRange.value = '';
   maxRange.value = '';
-  random = undefined;
+  randomNumber = null;
 })
 
 clearButton.addEventListener('click', function(e) {

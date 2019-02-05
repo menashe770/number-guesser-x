@@ -166,6 +166,10 @@ hr {
   justify-content: space-between;
 }
 
+.x-button {
+  background-color: #D0D2D3;
+}
+
 .card1, 
 .card2,
 .card3 {

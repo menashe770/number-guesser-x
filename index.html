@@ -6,8 +6,6 @@
   <link rel="shortcut icon" href="images/dice.ico" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   <title>Number Guesser</title>
 </head>
 <body>
@@ -30,7 +28,7 @@
             <label for="max-range-input">Max Range</label></br>
             <input type="Number" name="max-range-input" id="max-range-input">
           </div>
-          <button class="update-button">Update</button>
+          <button class="update-button disable1">Update</button>
         </form>
       </article>
       <article class="card2">
@@ -45,7 +43,7 @@
           </div>
           <div class="guess1">
             <label for="guess1">Guess</label></br>
-            <input type="Number" name="guess1" id="guess1" onchange="activateField()" id="guess1"/>
+            <input type="Number" name="guess1" id="guess1" id="guess1"/>
           </div>
           <h3>Challenger 2</h3>
           <div class="name2">
@@ -54,7 +52,7 @@
           </div>
           <div class="guess2">
             <label for="guess2">Guess</label><br>
-            <input type="Number" name="guess2" id="guess2" onchange="activateField()" id="guess2"/>
+            <input type="Number" name="guess2" id="guess2" id="guess2"/>
           </div>
           <div class="game-buttons">
             <button class="submit-guess-button">Submit Guess</button>
@@ -68,13 +66,13 @@
         <div class="challenger1-score">
         <h4>Challenger 1 Name</h4>
           <p>current guess</p>
-          <p class="guess-value">?</p>
-          <p>Your result</p>
+          <p class="guess-value guess-val1">?</p>
+          <p class="result1">Your result</p>
         </div>
         <div class="challenger2-score"><h4>Challenger 2 Name</h4>
           <p>current guess</p>
-          <p class="guess-value">?</p>
-          <p>Your result</p>
+          <p class="guess-value guess-val2">?</p>
+          <p class="result2">Your result</p>
         </div>
       </article>
     </section>
@@ -92,7 +90,8 @@
       <div class="p-right-bottom-card">
         <p><span class="r-num-guess">47</span> Guesses</p>
         <p><span class="right-side-timer"> 1.35</span> mins</p>
-        <p><i class="fas fa-times-circle" style="color: #6e6e6e;"></i></p>
+        <p>
+          <button class="x-button"><i class="fas fa-times-circle" style="color: #6e6e6e;"></i></button></p>
       </div>
       </div>
     </section>

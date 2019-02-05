@@ -18,7 +18,6 @@ var updateButton = document.querySelector('.update-button');
 // updateButton.disabled = true;
 // submitButton.disabled = true;
 
-
 updateButton.addEventListener('click', function(e) {
   e.preventDefault();
   minNumber.innerText = minRange.value;
@@ -61,33 +60,7 @@ guess1.addEventListener('click', function alertMessage(e) {
 	if (guess1Input < minRange) {
 		alert('Your number is outside the chosen range!');
 	}
-	// if (guess2Input > maxRange) {
-	// 	alert('Your number is outside the chosen range!')
-	// }
 }
-
-// function activateField() {
-
-// var guessOne = $('#guess1').val();
-// var guessTwo = $('#guess2').val();
-
-// if (guessOne != '' && guessTwo != '') {
-// $('#clear-game-button').prop('disabled', false);
-
-// }
-// if (guessOne === '' && guessTwo === '') {
-// 	$('#clear-game-button').prop('disabled', true);
-// }
-
-// if (guessOne != '' && guessTwo != '') {
-// $('#reset-game-button').prop('disabled', false);
-
-// }
-// if (guessOne === '' && guessTwo === '') {
-// 	$('#reset-game-button').prop('disabled', true);
-// }
-
-// } 
 =======
 function p1GuessEval() {
   displayGuess1.innerText = guess1Input.value;

@@ -5,14 +5,16 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link rel="shortcut icon" href="images/dice.ico" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <title>Number Guesser</title>
 </head>
 <body>
   <header>
     <h1><span>Number</span> Guesser</h1>
     <div>
-      <h2>Ultimate Challenger Edition</h2>
-      <hr class="hr1"><hr class="hr2">
+    <h2>Ultimate Challenger Edition</h2>
     </div>
   </header>
   <main>
@@ -43,7 +45,7 @@
           </div>
           <div class="guess1">
             <label for="guess1">Guess</label></br>
-            <input type="Number" name="guess1" id="guess1">
+            <input type="Number" name="guess1" id="guess1" onchange="activateField()" id="guess1"/>
           </div>
           <h3>Challenger 2</h3>
           <div class="name2">
@@ -52,12 +54,12 @@
           </div>
           <div class="guess2">
             <label for="guess2">Guess</label><br>
-            <input type="Number" name="guess2" id="guess2">
+            <input type="Number" name="guess2" id="guess2" onchange="activateField()" id="guess2"/>
           </div>
           <div class="game-buttons">
             <button class="submit-guess-button">Submit Guess</button>
-            <button class="reset-game-button">Reset Game</button>
-            <button class="clear-game-button">Clear Game</button>
+            <button class="reset-game-button" type="reset" id="reset-game-button" disabled>Reset Game</button>
+            <button class="clear-game-button" type="reset" id="clear-game-button" disabled>Clear Game</button>
           </div>
         </form>
       </article>

@@ -18,6 +18,17 @@ var updateButton = document.querySelector('.update-button');
 // updateButton.disabled = true;
 // submitButton.disabled = true;
 
+var name1Result = document.querySelector('.name1-result');
+var name2Result = document.querySelector('.name2-result');
+var player1Input = document.querySelector('#player1');
+var player2Input = document.querySelector('#player2');
+var randomNumber = null;
+var resetButton = document.querySelector('.reset-game-button');
+var result1 = document.querySelector('.result1');
+var result2 = document.querySelector('.result2');
+var rightSide = document.querySelector('.right-side');
+var submitButton = document.querySelector('.submit-guess-button');
+var updateButton = document.querySelector('.update-button');
 
 updateButton.addEventListener('click', function(e) {
   e.preventDefault();
@@ -31,6 +42,7 @@ submitButton.addEventListener('click', function(e) {
   e.preventDefault();
   p1GuessEval();
   p2GuessEval();
+  changeNames();
 })
 
 resetButton.addEventListener('click', function(e) {
@@ -42,6 +54,7 @@ resetButton.addEventListener('click', function(e) {
   minRange.value = '';
   maxRange.value = '';
   random = undefined;
+  resetFields();
 })
 
 clearButton.addEventListener('click', function(e) {
@@ -55,40 +68,35 @@ function random() {
   return random;
 };
 
-<<<<<<< HEAD
 
-guess1.addEventListener('click', function alertMessage(e) {
-	if (guess1Input < minRange) {
-		alert('Your number is outside the chosen range!');
-	}
-	// if (guess2Input > maxRange) {
-	// 	alert('Your number is outside the chosen range!')
-	// }
+// submitButton.addEventListener('click', function alertMessage() {
+// 	if (displayGuess1.value < minRange.value) {
+// 		alert('Your number is outside the chosen range!');
+// 	}
+// }
+
+function activateField() {
+
+var guessOne = $('#guess1').val();
+var guessTwo = $('#guess2').val();
+
+if (guessOne != '' && guessTwo != '') {
+$('#clear-game-button').prop('disabled', false);
+
+}
+if (guessOne === '' && guessTwo === '') {
+	$('#clear-game-button').prop('disabled', true);
 }
 
-// function activateField() {
+if (guessOne != '' && guessTwo != '') {
+$('#reset-game-button').prop('disabled', false);
 
-// var guessOne = $('#guess1').val();
-// var guessTwo = $('#guess2').val();
+}
+if (guessOne === '' && guessTwo === '') {
+	$('#reset-game-button').prop('disabled', true);
+}
 
-// if (guessOne != '' && guessTwo != '') {
-// $('#clear-game-button').prop('disabled', false);
-
-// }
-// if (guessOne === '' && guessTwo === '') {
-// 	$('#clear-game-button').prop('disabled', true);
-// }
-
-// if (guessOne != '' && guessTwo != '') {
-// $('#reset-game-button').prop('disabled', false);
-
-// }
-// if (guessOne === '' && guessTwo === '') {
-// 	$('#reset-game-button').prop('disabled', true);
-// }
-
-// } 
-=======
+} 
 function p1GuessEval() {
   displayGuess1.innerText = guess1Input.value;
   if (guess1Input.value < randomNumber) {
@@ -115,4 +123,88 @@ function p2GuessEval() {
   }
 }
 
->>>>>>> 91b84a23bd0e7e1d43b53fd458cf6f5928e91f03
+function resetFields () {
+  guess1Input.value = '';
+  guess2Input.value = '';
+  player1Input.value = '';
+  player2Input.value = '';
+  minRange.value = '';
+  maxRange.value = '';
+  randomNumber = null;
+  minNumber.innerText = '?';
+  maxNumber.innerText = '?';
+  displayGuess1.innerText = '?';
+  displayGuess2.innerText = '?';
+  name1Result.innerText = 'Challenger 1';
+  name2Result.innerText = 'Challenger 2';
+  result1.innerText = 'Your result';
+  result2.innerText = 'Your result';
+}
+
+function changeNames() {
+  name1Result.innerText = player1Input.value;
+  name2Result.innerText = player2Input.value;
+}
+
+function p1GuessEval() {
+  displayGuess1.innerText = guess1Input.value;
+  if (guess1Input.value < randomNumber) {
+    result1.innerText = 'That\'s too low';
+  } else if (guess1Input.value > randomNumber) {
+    result1.innerText = 'That\'s too high';
+  } else if (guess1Input.value === '') {
+    result1.innerText = 'ERROR';
+  } else {
+    result1.innerText = 'Boom!';
+    appendCard();
+    getWinner();
+  }
+}
+
+function p2GuessEval() {
+  displayGuess2.innerText = guess2Input.value;
+  if (guess2Input.value < randomNumber) {
+    result2.innerText = 'That\'s too low';
+  } else if (guess2Input.value > randomNumber) {
+    result2.innerText = 'That\'s too high';
+  } else if (guess2Input.value === '') {
+    result2.innerText = 'ERROR';
+  } else {
+    result2.innerText = 'Boom!';
+    appendCard();
+    getWinner();
+  }
+}
+
+
+function appendCard() {
+  var card = `<div class="right-side-card">
+        <div class="right-side-top-card">
+          <h3>${player1Input.value}</h3> 
+          <p class="p-vs">vs</p>
+          <h3>${player2Input.value}</h3>
+        </div>
+        <hr>
+        <div class="rs-main">
+          <h2 class="h2-chall-r">Challenger Name</h2>
+          <h2 class="h2-winner">Winner</h2>
+        </div>
+        <hr>
+        <div class="p-right-bottom-card">
+          <p><span class="r-num-guess">47</span> Guesses</p>
+          <p><span class="right-side-timer"> 1.35</span> mins</p>
+          <p><i class="fas fa-times-circle" style="color: #6e6e6e;"></i></p>
+        </div>
+      </div>`;
+      rightSide.innerHTML += card;
+}
+
+function getWinner() {
+  if (guess1Input.value == randomNumber) {
+    document.querySelector('.h2-chall-r').innerText = player1Input.value;
+  } else {
+    document.querySelector('.h2-chall-r').innerText = player2Input.value;
+  }
+}
+
+

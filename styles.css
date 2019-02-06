@@ -79,7 +79,9 @@ button:hover {
 
 .right-side {
   background-color: #D1D2D4;
-  display: inline-block;
+  display: flex;
+  /*align-items: flex-end;*/
+  flex-direction: column;
   width: 50%;
   height: 790px;
   float: right;

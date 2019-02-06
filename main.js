@@ -15,6 +15,7 @@ var randomNumber = null;
 var resetButton = document.querySelector('.reset-game-button');
 var result1 = document.querySelector('.result1');
 var result2 = document.querySelector('.result2');
+var rightSide = document.querySelector('.right-side');
 var submitButton = document.querySelector('.submit-guess-button');
 var updateButton = document.querySelector('.update-button');
 
@@ -82,6 +83,8 @@ function p1GuessEval() {
     result1.innerText = 'ERROR';
   } else {
     result1.innerText = 'Boom!';
+    appendCard();
+    getWinner();
   }
 }
 
@@ -95,6 +98,40 @@ function p2GuessEval() {
     result2.innerText = 'ERROR';
   } else {
     result2.innerText = 'Boom!';
+    appendCard();
+    getWinner();
   }
 }
+
+
+function appendCard() {
+  var card = <div class="right-side-card">
+        <div class="right-side-top-card">
+          <h3>${player1Input.value}</h3> 
+          <p class="p-vs">vs</p>
+          <h3>${player2Input.value}</h3>
+        </div>
+        <hr>
+        <div class="rs-main">
+          <h2 class="h2-chall-r">Challenger Name</h2>
+          <h2 class="h2-winner">Winner</h2>
+        </div>
+        <hr>
+        <div class="p-right-bottom-card">
+          <p><span class="r-num-guess">47</span> Guesses</p>
+          <p><span class="right-side-timer"> 1.35</span> mins</p>
+          <p><i class="fas fa-times-circle" style="color: #6e6e6e;"></i></p>
+        </div>
+      </div>`;
+      rightSide.innerHTML += card;
+}
+
+function getWinner() {
+  if (guess1Input.value == randomNumber) {
+    document.querySelector('.h2-chall-r').innerText = player1Input.value;
+  } else {
+    document.querySelector('.h2-chall-r').innerText = player2Input.value;
+  }
+}
+
 

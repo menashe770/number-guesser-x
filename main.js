@@ -105,7 +105,7 @@ function p2GuessEval() {
 
 
 function appendCard() {
-  var card = <div class="right-side-card">
+  var card = `<div class="right-side-card">
         <div class="right-side-top-card">
           <h3>${player1Input.value}</h3> 
           <p class="p-vs">vs</p>

@@ -83,7 +83,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   float: right;
-  height: 888px;
+  height: 781px;
   width: 50%;
 }
 
@@ -249,47 +249,46 @@ input {
 }
 
 @media only screen and (max-width: 1028px) {
-#guess1,
-#guess2 {
-  width: 60%;
+  #guess1,
+  #guess2 {
+    width: 60%;
   }
 
-button {
-  font-size: 12px;
+  button {
+    font-size: 12px;
   }
 } 
 
 @media only screen and (max-width: 759px) {
-.right-side {
-  height: 817px;
+  .right-side {
+    height: 817px;
   }
 }
 
 @media only screen and (max-width: 608px) {
+  .right-side {
+    display: block;
+    float: left;
+    height: auto;
+    width: 100%;
+    }
 
-.right-side {
-  display: block;
-  float: left;
-  height: auto;
-  width: 100%;
-  }
-
-.left-side {
-  display: block;
-  width: 100%;
+  .left-side {
+    display: block;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 430px) {
-button {
-  font-size: 10px;
+  button {
+    font-size: 10px;
   }
 }
 
 @media only screen and (max-width: 351px) {
-button 
-.set-min-range,
-.set-max-range {
-  width: 100%;
+  button 
+    .set-min-range,
+    .set-max-range {
+    width: 100%;
   }
 }

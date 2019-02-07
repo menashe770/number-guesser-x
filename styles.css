@@ -90,7 +90,6 @@ button:hover {
 .right-side-top-card {
   align-items: center;
   display: flex;
-  display: inline-block;
   justify-content: center;
   justify-content: space-around;
   padding-bottom: 5px;

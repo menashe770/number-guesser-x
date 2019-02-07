@@ -19,38 +19,39 @@ var rightSide = document.querySelector('.right-side');
 var submitButton = document.querySelector('.submit-guess-button');
 var updateButton = document.querySelector('.update-button');
 
-updateButton.addEventListener('click', function(e) {
+clearButton.addEventListener('click', clearFunc);
+resetButton.addEventListener('click', resetFields);
+submitButton.addEventListener('click', submitFunc);
+updateButton.addEventListener('click', updateFunc);
+
+function updateFunc(e) {
   e.preventDefault();
   minNumber.innerText = minRange.value;
   maxNumber.innerText = maxRange.value;
   randomNumber = random();
   console.log(randomNumber);
-})
+}
 
-submitButton.addEventListener('click', function(e) {
+function submitFunc(e) {
   e.preventDefault();
   p1GuessEval();
   p2GuessEval();
   changeNames();
-})
+}
 
-resetButton.addEventListener('click', function(e) {
-  e.preventDefault();
-  resetFields();
-})
-
-clearButton.addEventListener('click', function(e) {
+function clearFunc(e) {
   e.preventDefault();
   guess1Input.value = '';
   guess2Input.value = '';
-})
+}
 
 function random() {
   var random = Math.floor(Math.random() * (parseInt(maxRange.value) - parseInt(minRange.value) + 1)) + parseInt(minRange.value);
   return random;
 };
 
-function resetFields () {
+function resetFields(e) {
+  e.preventDefault();
   guess1Input.value = '';
   guess2Input.value = '';
   player1Input.value = '';
@@ -103,7 +104,6 @@ function p2GuessEval() {
   }
 }
 
-
 function appendCard() {
   var card = `<div class="right-side-card">
         <div class="right-side-top-card">
@@ -133,5 +133,4 @@ function getWinner() {
     document.querySelector('.h2-chall-r').innerText = player2Input.value;
   }
 }
-
 
